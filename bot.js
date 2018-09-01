@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot  = new Discord.Client();
 var request = require('request');
-
+const TOKEN = process.env.BOT_TOKEN ;
 //https://epic.gsfc.nasa.gov/api/natural DSCOVR JSON FILE
 
 
@@ -35,4 +35,4 @@ bot.on('message',(message)=>	 {
 	});
 	
 	
-bot.login(BOT_TOKEN);
+bot.login(TOKEN);
